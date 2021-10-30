@@ -1,5 +1,9 @@
 :root {
-    
+    --bo: hsl(31, 77%, 52%);
+    --dc: hsl(184, 100%, 22%);
+    --vdc: hsl(179, 100%, 13%);
+    --tw: hsla(0, 0%, 100%, 0.75);
+    --vlg: hsl(0, 0%, 95%);
 }
 * {
     margin: 0;
@@ -7,8 +11,72 @@
     box-sizing: border-box;
 }
 body {
-  
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main {
-    
+  width: 15rem;
+  height: 55rem;
+  display: flex;
+  flex-direction: column;
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+}
+.section {
+    flex-basis: 33.33%;
+    padding: 2rem;
+}
+.section img {
+    max-width: 2.5rem;
+    height: auto;
+    display: block;
+    margin-bottom: 1.8rem; 
+}
+.section h1 {
+    color: var(--vlg);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 1.5rem;
+}
+.section p {
+    color: var(--tw);
+    font-size: 13px;
+    margin-top: 1rem;
+}
+.section a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--vlg);
+    width: 6rem;
+    height: 2rem;
+    border-radius: 2rem;
+    font-size: 13px;
+    margin-top: 1.5rem;
+}
+.section a:hover {
+    background-color: none;
+}
+#link-one {
+    color: var(--bo);
+}
+#link-two {
+    color: var(--dc);
+}
+#link-three {
+    color: var(--vdc);
+}
+.one {
+    background-color: var(--bo);
+}
+.two {
+    background-color: var(--dc);
+}
+.three {
+    background-color: var(--vdc);
 }
