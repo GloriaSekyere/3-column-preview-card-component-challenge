@@ -60,7 +60,8 @@ main {
     margin-top: 1.5rem;
 }
 .section a:hover {
-    background-color: none;
+    background-color: transparent;
+    border: 1px solid var(--vlg);
 }
 #link-one {
     color: var(--bo);
