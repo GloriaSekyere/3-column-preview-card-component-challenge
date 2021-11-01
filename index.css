@@ -16,12 +16,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
-main {
+#main {
   width: 15rem;
   height: 55rem;
   display: flex;
   flex-direction: column;
+    justify-content: center;
+    align-items: center;
   /*position: absolute;
   top: 50%;
   left: 50%;
@@ -58,19 +61,32 @@ main {
     border-radius: 2rem;
     font-size: 13px;
     margin-top: 1.5rem;
+    transition: all 0.2s;
 }
 .section a:hover {
     background-color: transparent;
-    border: 1px solid var(--vlg);
+    border: 0.15rem solid var(--vlg);
 }
 #link-one {
     color: var(--bo);
+    transition: all 0.2s;
+}
+#link-one:hover {
+    color: var(--vlg);
 }
 #link-two {
     color: var(--dc);
+    transition: all 0.2s;
+}
+#link-two:hover {
+    color: var(--vlg);
 }
 #link-three {
     color: var(--vdc);
+    transition: all 0.2s;
+}
+#link-three:hover {
+    color: var(--vlg);
 }
 .one {
     background-color: var(--bo);
