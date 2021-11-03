@@ -16,19 +16,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
-#main {
-  width: 15rem;
-  height: 55rem;
+main {
+  flex-basis: 15rem;
   display: flex;
   flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  /*position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);*/
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem; 
 }
 .section {
     flex-basis: 33.33%;
@@ -90,10 +85,57 @@ body {
 }
 .one {
     background-color: var(--bo);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
 }
 .two {
     background-color: var(--dc);
 }
 .three {
     background-color: var(--vdc);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+@media only screen and (min-height: 700px) {
+  body {
+    height: 100vh;
+  }  
+}
+
+@media only screen and (min-width:1440px) {
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main {
+    width: 58%;
+    flex-basis: 30rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    background-color: yellow;
+}
+    .section {
+    flex-basis: 33.33%;
+    padding: 2rem;
+}
+    .section img {
+    max-width: 2.5rem;
+    height: auto;
+    display: block;
+    margin-bottom: 1.8rem; 
+}
+    .one {
+    background-color: var(--bo);
+    border-radius: 0.5rem 0 0 0.5rem;
+    
+}
+    .three {
+    background-color: var(--vdc);
+    border-radius: 0 0.5rem 0.5rem 0;
+}
 }
